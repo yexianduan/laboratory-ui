@@ -15,16 +15,16 @@
 </template>
 
 <script>
-import Chart from "@/components/Charts/MixChart";
+import Chart from "@/components/Charts/LineMarker";
 import { getLab } from "@/api/teacher";
 export default {
-  name: "MixChart",
+  name: "LineChart",
   components: { Chart },
   data() {
     return {
       user: {},
-      labId: 1,
       labData: [],
+      labId: 1,
     };
   },
   created() {
@@ -34,6 +34,7 @@ export default {
     getLab().then((res) => {
       // console.log(res.data)
       this.labData = res.data;
+      this.labId=1,
       console.log(this.labData);
     });
   },

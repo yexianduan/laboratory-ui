@@ -1,6 +1,5 @@
 <template>
-  <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
+  <div class="container">
   </div>
 </template>
 
@@ -18,13 +17,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.dashboard {
-  &-container {
-    margin: 30px;
-  }
-  &-text {
-    font-size: 30px;
-    line-height: 46px;
-  }
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:740px;
+  width: auto;
+  background-image: url("../../icons/svg/background.jpg");
+  background-size: cover;
 }
 </style>
